@@ -48,7 +48,7 @@ return {
 		}
 		dashboard.section.footer.val = {
 			"",
-			'"Maybe the One Piece was the friends you made along the way."',
+			'"Maybe the One Piece was the commits you made along the way."',
 			"",
 		}
 		dashboard.config.layout = {
