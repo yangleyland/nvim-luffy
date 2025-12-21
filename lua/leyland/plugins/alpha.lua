@@ -40,7 +40,27 @@ return {
 			"⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⠀⠀⠀⠙⠛⠛⠛⠀⠀⠀⠀⠀⠚⠁⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
 			"⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
 		}
-		-- Send config to alpha
+		-- Set menu buttons
+		dashboard.section.buttons.val = {
+			dashboard.button("f", "  Find file", ":Telescope find_files <CR>"),
+			dashboard.button("r", "  Recent files", ":Telescope oldfiles <CR>"),
+			dashboard.button("q", "  Quit", ":qa<CR>"),
+		}
+		dashboard.section.footer.val = {
+			"",
+			'"Maybe the One Piece was the friends you made along the way."',
+			"",
+		}
+		dashboard.config.layout = {
+			{ type = "padding", val = 2 },
+			dashboard.section.header,
+			{ type = "padding", val = 2 },
+			dashboard.section.footer, -- Quote here now
+			{ type = "padding", val = 2 },
+			dashboard.section.buttons,
+			{ type = "padding", val = 1 },
+		}
+		dashboard.section.footer.opts.hl = "Comment"
 		alpha.setup(dashboard.opts)
 
 		-- Disable folding on alpha buffer
