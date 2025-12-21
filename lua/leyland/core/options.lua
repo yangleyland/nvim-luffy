@@ -9,7 +9,6 @@ opt.tabstop = 2
 opt.shiftwidth = 2 -- 2 spaces for indent width
 opt.expandtab = true -- expand tab to spaces
 opt.autoindent = true -- copy indent of current line to new line
-
 -- :h autoindent for help
 
 opt.wrap = false
@@ -20,6 +19,7 @@ opt.smartcase = true -- uses mixed case for case sensitive search
 
 -- opt.cursorline = true
 
+opt.swapfile = false
 -- turn on termguicolors for tokyonight colorscheme to work
 
 -- opt.termguicolors = true
@@ -35,4 +35,3 @@ opt.clipboard:append("unnamedplus") -- use system clipboard as default register
 -- split windows
 opt.splitright = true -- split vertical window to the right
 opt.splitbelow = true -- split horizontal window to the bottom
-
