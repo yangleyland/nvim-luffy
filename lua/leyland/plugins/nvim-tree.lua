@@ -29,6 +29,7 @@ return {
 			view = {
 				width = 50,
 				relativenumber = true,
+				side = "right",
 			},
 			renderer = {
 				indent_markers = {
