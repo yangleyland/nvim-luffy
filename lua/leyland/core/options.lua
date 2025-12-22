@@ -2,6 +2,8 @@ vim.cmd("let g:netrw_liststyle = 3")
 local opt = vim.opt
 opt.relativenumber = true
 opt.cmdheight = 0
+opt.laststatus = 0 -- Hide the statusline
+opt.winbar = "%f %h%m%r%=%l,%c %P"
 opt.number = true
 
 -- tabs & indentation
@@ -35,3 +37,6 @@ opt.clipboard:append("unnamedplus") -- use system clipboard as default register
 -- split windows
 opt.splitright = true -- split vertical window to the right
 opt.splitbelow = true -- split horizontal window to the bottom
+
+-- LSP
+vim.lsp.set_log_level("error") -- Only show errors, not warnings
