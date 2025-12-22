@@ -3,7 +3,18 @@ return {
 	event = "VeryLazy",
 	vscode = true,
 	---@type Flash.Config
-	opts = {},
+	opts = {
+		modes = {
+			char = {
+				char_actions = function(motion)
+					return {
+						[";"] = "next",
+						[","] = "prev",
+					}
+				end,
+			},
+		},
+	},
   -- stylua: ignore
   keys = {
     { "s", mode = { "n", "x", "o" }, function() require("flash").jump() end, desc = "Flash" },
