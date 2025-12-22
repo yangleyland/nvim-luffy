@@ -13,3 +13,5 @@ keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" })
 
 keymap.set("n", "<leader>bd", "<cmd>bd<CR>", { desc = "Close buffer" })
 keymap.set("n", "<leader>ba", "<cmd>%bd<CR>", { desc = "Close all buffers" })
+keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Remap zz" })
+keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Remap zz" })
