@@ -23,6 +23,11 @@ return {
 					},
 				},
 			},
+			pickers = {
+				live_grep = {
+					path_display = { "truncate" },
+				},
+			},
 		})
 
 		telescope.load_extension("fzf")
