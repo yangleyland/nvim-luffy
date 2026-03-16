@@ -4,7 +4,7 @@ return {
 	event = { "BufReadPre", "BufNewFile" },
 	build = ":TSUpdate",
 	config = function()
-		require("nvim-treesitter").setup({
+		require("nvim-treesitter.configs").setup({
 			ensure_installed = {
 				"json",
 				"javascript",
